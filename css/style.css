@@ -130,6 +130,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.contact {
+  text-align: center;
+}
+
 .contact-phone,
 .contact-email {
   font-weight: bold;
@@ -148,7 +152,6 @@ h2 {
   background: #d0e7e7;
   height: 4em;
   width: 100%;
-  border-top: 10px solid black 90%;
 }
 
 .footer-back-to-top, 
@@ -191,18 +194,21 @@ h2 {
   .profile-description,
   .profile-image {
     display: inline-block;
-    width: 50%;
   }
 
   .profile-description {
     float: left;
     text-align: left;
     font-size: 1.2em;
-    padding: 1em 1em;
+    padding-left: 1em;
+    width: 55%;
   }
 
   .profile-image {
     float: right;
+    margin-right: 1.5em;
+    margin-left: auto;
+    width: 40%;
   }
 
   .article {
@@ -227,6 +233,7 @@ h2 {
 
   .portfolio {
     padding-bottom: 75em;
+    min-height: calc(100vh - 30px);
   }
 
   .contact {
@@ -254,12 +261,6 @@ h2 {
       float: right;
     }
 
-    .profile-image {
-      float: right;
-      width: 50%;
-      padding-right: 2em;
-    }
-
     .profile-description {
       float: left;
       width: 50%;
@@ -267,19 +268,24 @@ h2 {
       margin-top: -15px;
     }
 
+    .profile-image {
+      float: right;
+      width: 45%;
+      margin-right: .5em;
+    }
+
     .profile-description,
     .profile-image {
       display: inline-block;
-      width: center;
       vertical-align: top;
-      width: center;
     }
 
     body {
       width: 95%;
       margin-left: auto;
       margin-right: auto;
-      box-align: center;
+      text-align: center;
+      
     }
 
     .i1,
@@ -288,16 +294,22 @@ h2 {
     .i4,
     .i5,
     .i6 {
-      width: 33%;
+      width: 31.5%;
       float: left;
       margin-left: auto;
       margin-right: auto;
       padding: 1em;
     }
 
+    .i1,
+    .i4 {
+      margin-left: 1.5em;
+    }
+
     .portfolio {
       padding-bottom: 53em;
       margin-top: 2em;
+      min-height: calc(100vh - 60px);
     }
 
   /* ---- Float clearfix ---- */
