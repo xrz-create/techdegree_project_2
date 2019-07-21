@@ -2,7 +2,9 @@
   Web Fonts
 ==================================== */
 
-
+@font-face {
+  font-family: 'Roboto', sans-serif;
+}
 
 /* ================================= 
   Base Element Styles
@@ -16,8 +18,15 @@ body {
   background: #d0e7e7;
 }
 
+p, 
+h1, 
+h2,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 img {
@@ -81,6 +90,29 @@ section {
 
 .main-nav a:hover {
   color: #d6699c;
+}
+
+.main-nav2 {
+  display: none;
+}
+
+.main-nav2 a {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  color:#2e3333;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.main-nav2 a {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .2em;
+  width: 95%;
+  background: white;
+  border-radius: 10px;
+  text-transform: uppercase;
 }
 
 /* ---- Layout Containers ---- */
@@ -242,6 +274,30 @@ h2 {
     margin-bottom: -20px;
   }
 
+  .contact-description {
+    width: 70%;
+  }
+
+  .footer-back-to-top {
+    display: none;
+  }
+
+  .main-nav2 {
+    display: inline-block;
+    float: right;
+    text-align: center;
+  }
+
+  .main-nav2 a {
+    background: transparent;
+  }
+  
+  .main-nav2 li {
+    display: inline-block;
+    font-size: smaller;
+    padding: 0 .4em;
+  }
+
 /* ---- Float clearfix ---- */
   .clearfix::after {
     content: " ";
@@ -310,6 +366,30 @@ h2 {
       padding-bottom: 53em;
       margin-top: 2em;
       min-height: calc(100vh - 60px);
+    }
+
+    .contact-description {
+      width: 70%;
+    }
+  
+    .footer-back-to-top {
+      display: none;
+    }
+  
+    .main-nav2 {
+      display: inline-block;
+      float: right;
+      text-align: center;
+    }
+  
+    .main-nav2 a {
+      background: transparent;
+    }
+    
+    .main-nav2 li {
+      display: inline-block;
+      font-size: smaller;
+      padding: 0 .4em;
     }
 
   /* ---- Float clearfix ---- */
